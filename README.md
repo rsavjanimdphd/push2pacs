@@ -30,8 +30,8 @@ In order to push data onto PACS, you will need to work with you hospital IT team
 Please see our [requirements.txt](https://github.com/rsavjanimdphd/push2pacs/blob/main/requirements.txt) file for a list of the required software with links to download them. 
 
 # Contact
-Ricky Savjani, MD/PhD
-Department of Radiation Oncology,
-UCLA
-
+Ricky Savjani, MD/PhD  
+Department of Radiation Oncology  
+UCLA  
+  
 [rickysavjani.com](http://rickysavjani.com/)
