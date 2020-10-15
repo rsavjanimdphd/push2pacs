@@ -14,4 +14,11 @@ This repository shows how to use existing open source tools to do:
 
 This approach can be tailored by radiation oncology departments to share radiation dose maps onto PACS. 
 
-For departments using MIM, please see our [MIM_README.pdf](https://github.com/rsavjanimdphd/push2pacs/blob/main/MIM_README.pdf) 
+For departments using [MIM](https://www.mimsoftware.com/solutions/radiationoncology), please see our [MIM_README.pdf](https://github.com/rsavjanimdphd/push2pacs/blob/main/MIM_README.pdf) 
+
+
+
+
+
+Ricky Savjani
+[rickysavjani.com](http://rickysavjani.com/)
