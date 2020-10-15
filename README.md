@@ -1,4 +1,4 @@
-# push2pacs
+# PUSH 2 PACS
 Sharing radiation dose information onto PACS
 
 ![alt text][logo]
