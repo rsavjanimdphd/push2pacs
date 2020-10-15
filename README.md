@@ -18,13 +18,14 @@ This approach can be tailored by radiation oncology departments to share radiati
 
 For departments using [MIM](https://www.mimsoftware.com/solutions/radiationoncology), please see our [MIM README](https://github.com/rsavjanimdphd/push2pacs/blob/main/MIM_README.pdf) to configure MIM to push dose maps to PACS directly. 
 
-# Requirements
+# IT Requirements
 In order to push data onto PACS, you will need to work with you hospital IT team to grant permissions for your DICOM server to push data onto PACS. This typically requires knowing the following information from both your server and the PACS server:
 
 1. Static IP Address
 2. AE Title
 3. Port #
 
+# Software Requirements
 Please see our [requirements.txt](https://github.com/rsavjanimdphd/push2pacs/blob/main/requirements.txt) file for a list of the required software with links to download them. 
 
 
