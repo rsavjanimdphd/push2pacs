@@ -1,6 +1,10 @@
 # push2pacs
 Sharing radiation dose information onto PACS
 
+![alt text][logo]
+
+[logo]: https://github.com/rsavjanimdphd/push2pacs/blob/main/images/push2PACS.pdf "PUSH 2 PACS"
+
 This repository shows how to use existing open source tools to do:
 
 1. Convert DICOM-RT RTDose files into standard DICOM files (plastimatch)
