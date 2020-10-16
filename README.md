@@ -13,32 +13,7 @@ This repository shows how to use existing open source tools to:
 3. Create Isodose Lines
 4. Convert DICOM-RT RTDose files into standard DICOM files (plastimatch)
 
-    outputFolder = "dicom-output/"
 
-    # Create patient and study and put the volume under the study
-    shNode = slicer.vtkMRMLSubjectHierarchyNode.GetSubjectHierarchyNode(slicer.mrmlScene)
-    ctShItemID = shNode.GetItemByDataNode(ct)
-
-    import DICOMScalarVolumePlugin
-    exporter = DICOMScalarVolumePlugin.DICOMScalarVolumePluginClass()
-
-    # export ct to dicom
-    exportables = exporter.examineForExport(ctShItemID)
-    for exp in exportables:
-      exp.directory = outputFolder
-    exporter.export(exportables)
-
-    # resample rtdose to be in same space as ct
-    parameters = {'inputVolume':rtdose, 'referenceVolume':ct, 'outputVolume':rtdose, 
-                              'interpolationMode':'Linear'}
-    cliNode = slicer.cli.run(slicer.modules.brainsresample, None, parameters)
-
-    # export rtdose to dicom
-    rtdoseShItemID = shNode.GetItemByDataNode(rtdose)
-    exportables = exporter.examineForExport(rtdoseShItemID)
-    for exp in exportables:
-      exp.directory = outputFolder
-    exporter.export(exportables)
 
 **Push DICOM images onto PACS**  
 5. Push DICOM images onto a DICOM Server (e.g., PACS) with DCMTK [commands](https://github.com/rsavjanimdphd/push2pacs/blob/main/src/push2pacs.sh)
