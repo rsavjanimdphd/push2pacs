@@ -22,4 +22,3 @@ curDir=`pwd`
 
 # send the output dicom directories (will recursively (+r) scan directories (+sd) for anything with *.dcm ending 
 dcmsend -v +sd +r $AET $IP:$PORT ../dicom-output *.dcm
-	
