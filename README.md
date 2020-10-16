@@ -28,10 +28,18 @@ This repository shows how to use existing open source tools to:
 **Push DICOM images onto PACS**  
 5. Push DICOM images onto a DICOM Server (e.g., PACS) with DCMTK [commands](https://github.com/rsavjanimdphd/push2pacs/blob/main/src/push2pacs.sh)
 
+![alt text][pacs]
+
+[pacs]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/pacs.png
+
 This approach can be tailored by radiation oncology departments to share radiation dose maps onto PACS. 
 
 # MIM
 For departments using [MIM](https://www.mimsoftware.com/solutions/radiationoncology), please see our [MIM README](https://github.com/rsavjanimdphd/push2pacs/blob/main/MIM_README.pdf) to configure MIM to push dose maps to PACS directly. 
+
+![alt text][mim]
+
+[mim]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/mim.png
 
 # IT Requirements
 In order to push data onto PACS, you will need to work with you hospital IT team to grant permissions for your DICOM server to push data onto PACS. This typically requires knowing the following information from both your server and the PACS server:
