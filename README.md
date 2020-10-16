@@ -8,13 +8,13 @@ Sharing radiation dose information onto PACS
 This repository shows how to use existing open source tools to:
 
 **Interact with data using Slicer** 
-1. Use 3D Slicer to via Jupyter notebook to interrogate data and plot interactively 
+1. Use [3D Slicer](https://www.slicer.org/) via a [Jupyter notebook](https://github.com/rsavjanimdphd/push2pacs/blob/main/push2pacs.ipynb) to interrogate data and plot interactively 
 2. Load RTDose RTSS Dicom files and underlying anatomical files
 3. Create Isodose Lines
 4. Convert DICOM-RT RTDose files into standard DICOM files (plastimatch)
 
 **Push DICOM images onto PACS**  
-5. Push DICOM images onto a DICOM Server (e.g., PACS) (DCMTK)
+5. Push DICOM images onto a DICOM Server (e.g., PACS) with DCMTK [commands](https://github.com/rsavjanimdphd/push2pacs/blob/main/src/push2pacs.sh)
 
 This approach can be tailored by radiation oncology departments to share radiation dose maps onto PACS. 
 
