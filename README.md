@@ -9,11 +9,21 @@ This repository shows how to use existing open source tools to:
 
 **Interact with data using Slicer** 
 1. Use [3D Slicer](https://www.slicer.org/) via a [Jupyter notebook](https://github.com/rsavjanimdphd/push2pacs/blob/main/push2pacs.ipynb) to interrogate data and plot interactively 
+
+![alt text][disp]
+
 2. Load RTDose RTSS Dicom files and underlying anatomical files
 3. Create Isodose Lines
+
+![alt text][dose]
+
 4. Convert DICOM-RT RTDose files into standard DICOM files (plastimatch)
 
+![alt text][code]
 
+[code]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/code.png
+[dose]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/isodose.png
+[disp]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/4view.png
 
 **Push DICOM images onto PACS**  
 5. Push DICOM images onto a DICOM Server (e.g., PACS) with DCMTK [commands](https://github.com/rsavjanimdphd/push2pacs/blob/main/src/push2pacs.sh)
