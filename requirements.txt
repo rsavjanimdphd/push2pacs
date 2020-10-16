@@ -1,7 +1,4 @@
-Plastimatch 
-- Open source package useful for converting DICOM-RT to other formats
-https://plastimatch.org/plastimatch.html
-
+Mandatory:
 DCMTK  
 - DICOM Toolkit for query/retrieve and sending data to DICOM servers (e.g., PACS)
 https://dicom.offis.de/dcmtk.php.en
@@ -13,6 +10,17 @@ https://www.slicer.org/
 SlicerRT
 - 3D Slicer extension for handling DICOM-RT data
 http://slicerrt.github.io/
+
+SlicerJupyter
+- 3D Slicer extension for using Jupyter notebooks
+https://github.com/Slicer/SlicerJupyter
+
+--------------------------------------------------------------------------------
+
+Optional (but useful):
+Plastimatch 
+- Open source package useful for converting DICOM-RT to other formats
+https://plastimatch.org/plastimatch.html
 
 CERR
 - MATLAB computational environment for Radiological Research
