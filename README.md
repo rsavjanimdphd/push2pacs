@@ -13,7 +13,7 @@ This repository shows how to use existing open source tools to:
 3. Create Isodose Lines
 4. Convert DICOM-RT RTDose files into standard DICOM files (plastimatch)
 
-**Push DICOM images onto PACS** 
+**Push DICOM images onto PACS**  
 5. Push DICOM images onto a DICOM Server (e.g., PACS) (DCMTK)
 
 This approach can be tailored by radiation oncology departments to share radiation dose maps onto PACS. 
