@@ -49,7 +49,34 @@ In order to push data onto PACS, you will need to work with you hospital IT team
 3. Port #
 
 # Software Requirements
-Please see our [requirements.txt](https://github.com/rsavjanimdphd/push2pacs/blob/main/requirements.txt) file for a list of the required software with links to download them. 
+
+Mandatory:
+DCMTK  
+- DICOM Toolkit for query/retrieve and sending data to DICOM servers (e.g., PACS)
+https://dicom.offis.de/dcmtk.php.en
+
+3D Slicer
+- open source package for visualizing and analyzing volumetric medical imaging data
+https://www.slicer.org/
+
+SlicerRT
+- 3D Slicer extension for handling DICOM-RT data
+http://slicerrt.github.io/
+
+SlicerJupyter
+- 3D Slicer extension for using Jupyter notebooks
+https://github.com/Slicer/SlicerJupyter
+
+--------------------------------------------------------------------------------
+
+Optional (but useful):
+Plastimatch 
+- Open source package useful for converting DICOM-RT to other formats
+https://plastimatch.org/plastimatch.html
+
+CERR
+- MATLAB computational environment for Radiological Research
+https://github.com/cerr/CERR
 
 # Contact
 Ricky Savjani, MD/PhD  
