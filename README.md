@@ -51,6 +51,7 @@ In order to push data onto PACS, you will need to work with you hospital IT team
 # Software Requirements
 
 Mandatory:  
+  
 DCMTK  
 DICOM Toolkit for query/retrieve and sending data to DICOM servers (e.g., PACS)  
 https://dicom.offis.de/dcmtk.php.en  
@@ -69,15 +70,16 @@ https://github.com/Slicer/SlicerJupyter
 
 --------------------------------------------------------------------------------  
 
-Optional (but useful):
-Plastimatch 
-- Open source package useful for converting DICOM-RT to other formats
-https://plastimatch.org/plastimatch.html
-
-CERR
-- MATLAB computational environment for Radiological Research
-https://github.com/cerr/CERR
-
+Optional (but useful):  
+  
+Plastimatch  
+Open source package useful for converting DICOM-RT to other formats  
+https://plastimatch.org/plastimatch.html  
+  
+CERR  
+- MATLAB computational environment for Radiological Research  
+https://github.com/cerr/CERR  
+  
 # Contact
 Ricky Savjani, MD/PhD  
 Department of Radiation Oncology  
