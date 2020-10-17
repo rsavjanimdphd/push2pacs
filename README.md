@@ -77,7 +77,7 @@ Open source package useful for converting DICOM-RT to other formats
 https://plastimatch.org/plastimatch.html  
   
 CERR  
-- MATLAB computational environment for Radiological Research  
+MATLAB computational environment for Radiological Research  
 https://github.com/cerr/CERR  
   
 # Contact
