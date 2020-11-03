@@ -1,10 +1,15 @@
 ### PUSH 2 PACS
+
 Sharing radiation dose information onto PACS
 
 ![alt text][logo]
 
 [logo]: https://github.com/rsavjanimdphd/push2pacs/blob/main/images/push2PACS.jpg "PUSH 2 PACS"
 
+# About  
+The idea of this project is to help radiation oncology departments develop a framework for sharing a patient's radiation dose distribution maps onto the hospital PACS system. This enables central access for the radiation dose map so that all providers may reference it. Radiologists can also more readily incorporate the volumetric radiation data into their differential diagnoses. 
+
+# Framework  
 This repository shows how to use existing open source tools to:
 
 **Interact with data using Slicer** 
@@ -19,9 +24,36 @@ This repository shows how to use existing open source tools to:
 
 4. Convert DICOM-RT RTDose files into standard DICOM files (plastimatch)
 
-![alt text][code]
+**Export CT and RTDose to standard DICOM volumes**
+```
+  outputFolder = "dicom-output/"
+  ​
+  # Create patient and study and put the volume under the study
+  shNode = slicer.vtkMRMLSubjectHierarchyNode.GetSubjectHierarchyNode(slicer.mrmlScene)
+  ctShItemID = shNode.GetItemByDataNode(ct)
+  ​
+  import DICOMScalarVolumePlugin
+  exporter = DICOMScalarVolumePlugin.DICOMScalarVolumePluginClass()
+  ​
+  # export ct to dicom
+  exportables = exporter.examineForExport(ctShItemID)
+  for exp in exportables:
+    exp.directory = outputFolder
+  exporter.export(exportables)
+  ​
+  # resample rtdose to be in same space as ct
+  parameters = {'inputVolume':rtdose, 'referenceVolume':ct, 'outputVolume':rtdose, 
+                            'interpolationMode':'Linear'}
+  cliNode = slicer.cli.run(slicer.modules.brainsresample, None, parameters)
+  ​
+  # export rtdose to dicom
+  rtdoseShItemID = shNode.GetItemByDataNode(rtdose)
+  exportables = exporter.examineForExport(rtdoseShItemID)
+  for exp in exportables:
+    exp.directory = outputFolder
+  exporter.export(exportables)
+ ```
 
-[code]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/code.png
 [dose]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/isodose.png
 [disp]:https://github.com/rsavjanimdphd/push2pacs/blob/main/images/4view.png
 
@@ -49,8 +81,37 @@ In order to push data onto PACS, you will need to work with you hospital IT team
 3. Port #
 
 # Software Requirements
-Please see our [requirements.txt](https://github.com/rsavjanimdphd/push2pacs/blob/main/requirements.txt) file for a list of the required software with links to download them. 
 
+Mandatory:  
+  
+DCMTK  
+DICOM Toolkit for query/retrieve and sending data to DICOM servers (e.g., PACS)  
+https://dicom.offis.de/dcmtk.php.en  
+
+3D Slicer  
+Ppen source package for visualizing and analyzing volumetric medical imaging data  
+https://www.slicer.org/  
+
+SlicerRT  
+3D Slicer extension for handling DICOM-RT data  
+http://slicerrt.github.io/  
+
+SlicerJupyter  
+3D Slicer extension for using Jupyter notebooks  
+https://github.com/Slicer/SlicerJupyter  
+
+--------------------------------------------------------------------------------  
+
+Optional (but useful):  
+  
+Plastimatch  
+Open source package useful for converting DICOM-RT to other formats  
+https://plastimatch.org/plastimatch.html  
+  
+CERR  
+MATLAB computational environment for Radiological Research  
+https://github.com/cerr/CERR  
+  
 # Contact
 Ricky Savjani, MD/PhD  
 Department of Radiation Oncology  
