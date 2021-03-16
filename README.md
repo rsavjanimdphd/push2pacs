@@ -9,6 +9,12 @@ Sharing radiation dose information onto PACS
 # About  
 The idea of this project is to help radiation oncology departments develop a framework for sharing a patient's radiation dose distribution maps onto the hospital PACS system. This enables central access for the radiation dose map so that all providers may reference it. Radiologists can also more readily incorporate the volumetric radiation data into their differential diagnoses. 
 
+# Citation
+
+Our paper was published in RSNA's journal Radiology: Imaging Cancer.
+
+Savjani RR, Salamon N, Deng J, Ma TM, Tenn S, Agazaryan N, Hegde J, Kaprealian T. (2021). A Framework for Sharing Radiation Dose Distribution Maps in the Electronic Medical Record for Improving Multidisciplinary Patient Management. [Radiology: Imaging Cancer](https://pubs.rsna.org/doi/10.1148/rycan.2021200075)
+
 # Framework  
 This repository shows how to use existing open source tools to:
 
