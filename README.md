@@ -7,7 +7,7 @@ Sharing radiation dose information onto PACS
 [logo]: https://github.com/rsavjanimdphd/push2pacs/blob/main/images/push2PACS.jpg "PUSH 2 PACS"
 
 # About  
-The idea of this project is to help radiation oncology departments develop a framework for sharing a patient's radiation dose distribution maps onto the hospital PACS system. This enables central access for the radiation dose map so that all providers may reference it. Radiologists can also more readily incorporate the volumetric radiation data into their differential diagnoses. 
+The idea of this project is to help radiation oncology departments develop a framework for sharing a patient's radiation dose distribution map onto the hospital PACS. This enables central access for the radiation dose map so that all providers may view and reference it. Radiologists can also more readily incorporate the volumetric radiation data into their differential diagnoses. 
 
 # Citation
 
