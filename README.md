@@ -119,7 +119,7 @@ MATLAB computational environment for Radiological Research
 https://github.com/cerr/CERR
 
 DicomRTTool  
-Simple Python Module for Conversions Between DICOM Images and Radiation Therapy Structures, Masks, and Prediction Arrays [paper](https://www.sciencedirect.com/science/article/pii/S1879850021000485?dgcid=author)
+Simple Python Module for Conversions Between DICOM Images and Radiation Therapy Structures, Masks, and Prediction Arrays [[paper]](https://www.sciencedirect.com/science/article/pii/S1879850021000485?dgcid=author)
 https://github.com/brianmanderson/Dicom_RT_and_Images_to_Mask
   
 # Contact
